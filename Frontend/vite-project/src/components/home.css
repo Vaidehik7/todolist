@@ -1,0 +1,64 @@
+/* List item styling */
+li {
+    padding: 12px 20px;
+    margin: 10px 0;
+    background-color: #000000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Flex container inside list item for text + buttons */
+  .list-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Text part (left side) */
+  .item-text {
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  /* Buttons container (right side) */
+  .buttons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  /* Button styling for edit and delete */
+  .buttons button {
+    padding: 6px 10px;
+    background-color: #6c757d; /* neutral button color for Edit */
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    font-size: 0.9rem;
+  }
+  
+  /* Specific color for Delete button */
+  .buttons .delete-btn {
+    background-color: #dc3545;
+  }
+  
+  /* Hover effects */
+  .buttons button:hover {
+    opacity: 0.85;
+  }
+  .buttons .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Active click effect */
+  .buttons button:active {
+    transform: scale(0.95);
+  }
+  
+  
